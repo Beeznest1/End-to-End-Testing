@@ -27,5 +27,3 @@ driver.find_element(By.XPATH, '//*[@id="app"]/div/main/div/div/div/div[1]/div/di
 driver.close()
 driver.quit()
 
-
-

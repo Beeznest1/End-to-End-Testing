@@ -17,8 +17,8 @@ driver.find_element(By.XPATH, '/html/body/div/div/div[1]/div[1]/button/span').cl
 driver.find_element(By.XPATH, '/html/body/div/header/div[1]/div/nav[1]/a[1]/span').click()
 assert driver.find_element(By.XPATH, '/html/body/div/div[1]/div[4]/div[3]/h3/span[2]').is_displayed()
 print("the project is present in the project page")
-driver.find_element(By.XPATH, '/html/body/div/div[1]/div[4]/div[3]/div[4]/a[2]/span').click()
-driver.find_element(By.XPATH, '//*[@id="app"]/div/main/div/div/div/div[1]/div/div[2]/div[1]/div[2]/div/div[3]/div[2]/div').click()
+driver.find_element(By.XPATH, '/html/body/div/div[1]/div[4]/div[3]/div[4]/a[2]/span').click() # "View More" button
+driver.find_element(By.XPATH, '//*[@id="app"]/div/main/div/div/div/div[1]/div/div[2]/div[1]/div[2]/div/div[3]/div[2]/div').click() # "delete" icon
 #if driver.current_url == "https://test.beeznests.com/new-projects":
     #print("the project has been successfully deleted and the user redirected to the login page")
 #else:

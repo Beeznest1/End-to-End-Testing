@@ -49,7 +49,7 @@ def PostProject():
     driver.find_element(By.XPATH, locators.Experience).send_keys("it gives a good experience for the students to have more confidence in their Future Job")
     driver.find_element(By.XPATH, locators.Key_practicical_skills).send_keys("developing their coding skill and improving their understanding of front-end")
     driver.find_element(By.XPATH, "//span[normalize-space()='next']").click()  # first Next Button
-    driver.find_element(By.XPATH, locators.second_next).click()
+    driver.find_element(By.XPATH, locators.second_next_button).click()
 
 
 Login()

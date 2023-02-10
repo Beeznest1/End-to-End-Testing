@@ -8,5 +8,5 @@ What_you_will_Do = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div
 Skills = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[11]/div/div[3]/div/p"
 Who_you_work_with = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[13]/div/div[3]/div/p"
 Experience = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[15]/div/div[3]/div/p"
-Key_practicical_skills = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[17]/div/div[3]/div/p"
+Key_practical_skills = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[17]/div/div[3]/div/p"
 second_next_button = "/html/body/div/div/main/div/div/div/div/div/div[1]/div[2]/div/div[3]/button[1]/span"

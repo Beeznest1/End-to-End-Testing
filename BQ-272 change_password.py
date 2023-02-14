@@ -13,11 +13,11 @@ driver.implicitly_wait(10)
 driver.get("https://test.beeznests.com/")
 
 
-def Login(password):
+def Login():
     driver.find_element(By.XPATH, "//a[normalize-space()='LOG IN']").click()
     driver.find_element(By.ID, "email").send_keys("rashed.mahazi@gmail.com")
     sleep(1)
-    driver.find_element(By.ID, "password").send_keys(password)
+    driver.find_element(By.ID, "password").send_keys("123456789")
     sleep(1)
     driver.find_element(By.XPATH, "/html/body/div/div/div[1]/div[1]/button").click()  # login button
     sleep(3)
@@ -31,15 +31,31 @@ def Login(password):
 def change_password():
     driver.find_element(By.XPATH, locators.DropDown_Menu).click()
     driver.find_element(By.XPATH, "//a[normalize-space()='Change Password']").click()
-    driver.find_element(By.XPATH, locators.Old_password).send_keys("12345679")
+    driver.find_element(By.XPATH, locators.Old_password).send_keys("123456789")
     driver.find_element(By.XPATH, locators.New_password).send_keys("12345678")
     driver.find_element(By.XPATH, locators.Confirm_new_password).send_keys("12345678")
     driver.find_element(By.XPATH, "//span[@class='v-btn__content']").click()
     sleep(3)
 
-asdfasdfhasdfdfgfd
+
+def Logout():
+    driver.find_element(By.XPATH, "/html/body/div/div/header/div[1]/div/nav[2]/div/span/img").click()  # Dropdown menu
+    sleep(2)
+    driver.find_element(By.XPATH, "/html/body/div/div/header/div[1]/div/nav[2]/div/div/div/span").click()  # Logout button
+    sleep(2)
+    print("you are logout of Beeznests")
 
 
-Login("123456789")
+def Login_with_new_password():
+    driver.find_element(By.ID, "email").send_keys("rashed.mahazi@gmail.com")
+    sleep(1)
+    driver.find_element(By.ID, "password").send_keys("12345678")
+    sleep(1)
+    driver.find_element(By.XPATH, "/html/body/div/div/div[1]/div[1]/button").click()  # login button
+    sleep(3)
+
+
+Login()
 change_password()
-# Login("12345678") # login with the new password
+Logout()
+Login_with_new_password()

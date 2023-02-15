@@ -43,4 +43,15 @@ what_you_will_do = "writing test cases including automation and manual"
 Skills_you_possess = "Jira, python, selenium, Junit, Java"
 who_you_work_with = "Developers"
 
+# requirements for edit profile
+Drop_Down = "//img[@alt='A rashed']"
+Edit_profile = "//a[normalize-space()='Edit Profile']"
+Name = "(//input[@type='text'])[2]"
+Introduction = "(//textarea)[1]"
+Linkedin = "(//input[@type='text'])[5]"
+Add_Skills = "//i[@class='v-icon notranslate mdi mdi-arrow-down theme--dark']"
+Graphic_Design = "//span[contains(text(),'Graphic Design')]"
+Digital_Media = "//span[contains(text(),'Digital Media')]"
+# Collapse = "//span[@class='v-btn__content'][normalize-space()='']"
+Save = "(//span[normalize-space()='Save'])[1]"
 

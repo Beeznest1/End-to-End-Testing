@@ -3,8 +3,6 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-
-import BeeznestsLocators
 import BeeznestsLocators as locators
 
 s = Service(executable_path='chromedriver.exe')
@@ -33,7 +31,7 @@ def Login():
 
 def PostProject():
     driver.find_element(By.XPATH, locators.PROJECTS).click()  # Project tab
-    driver.find_element(By.XPATH, '/html/body/div/div[1]/div[2]/a').click()  # Post A New Project button
+    driver.find_element(By.XPATH, locators.Post_A_New_Project).click()
     driver.find_element(By.XPATH, locators.position).send_keys("Software Developer")  # Position Type
     sleep(2)
     driver.find_element(By.XPATH, locators.ProjectName).send_keys("Enjoy Dude")  # Project/Company Name
@@ -44,12 +42,14 @@ def PostProject():
     driver.find_element(By.XPATH, locators.AppDeadline).click()  # Application Deadline
     sleep(3)
     driver.find_element(By.XPATH, "//div[normalize-space()='30']").click()  # selecting the day in the calendar
-    driver.find_element(By.XPATH, locators.Project_Description).send_keys("Enjoy Dude Goal is to build a software which make people works easy")
-    driver.find_element(By.XPATH, locators.What_you_will_Do).send_keys("developing the front-end code for the app")
-    driver.find_element(By.XPATH, locators.Skills).send_keys("HTML, CSS, JS, SQL")
-    driver.find_element(By.XPATH, locators.Who_you_work_with).send_keys("Front-End Team")
-    driver.find_element(By.XPATH, locators.Experience).send_keys("it gives a good experience for the students to have more confidence in their Future Job")
-    driver.find_element(By.XPATH, locators.Key_practical_skills).send_keys("developing their coding skill and improving their understanding of front-end")
+    # filling the fields
+    driver.find_element(By.XPATH, "(//p)[2]").send_keys(locators.Project_Description)
+    driver.find_element(By.XPATH, "(//p)[4]").send_keys(locators.what_you_will_do)
+    driver.find_element(By.XPATH, "(//p)[6]").send_keys(locators.Skills)
+    driver.find_element(By.XPATH, "(//p)[8]").send_keys(locators.who_you_work_with)
+    driver.find_element(By.XPATH, "(//p)[10]").send_keys(locators.Experience)
+    driver.find_element(By.XPATH, "(//p)[12]").send_keys(locators.Key_practical_skills)
+
     driver.find_element(By.XPATH, "//span[normalize-space()='next']").click()  # first Next Button
     driver.find_element(By.XPATH, locators.second_next_button).click()
     sleep(2)

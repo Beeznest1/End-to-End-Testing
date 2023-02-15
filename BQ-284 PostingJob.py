@@ -3,8 +3,6 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-
-import BeeznestsLocators
 import BeeznestsLocators as locators
 
 s = Service(executable_path='chromedriver.exe')
@@ -17,12 +15,12 @@ driver.get("https://test.beeznests.com/")
 
 
 def Login():
-    driver.find_element(By.XPATH, "//a[normalize-space()='LOG IN']").click()
+    driver.find_element(By.XPATH, "//a[normalize-space()='LOG IN']").click()  # login button on the top-right of the Beeznests page
     driver.find_element(By.ID, "email").send_keys("admin@beeznests.com")
     sleep(2)
     driver.find_element(By.ID, "password").send_keys("12345678")
     sleep(2)
-    driver.find_element(By.XPATH, "/html/body/div/div/div[1]/div[1]/button").click()
+    driver.find_element(By.XPATH, "/html/body/div/div/div[1]/div[1]/button").click()  # login button underneath the email and password fields
     sleep(2)
     print(driver.current_url)
     if driver.current_url == "https://test.beeznests.com/":

@@ -1,17 +1,20 @@
-
 # requirement for posting a project
 PROJECTS = "/html/body/div/header/div[1]/div/nav[1]/a[1]/span"
-position = "/html/body/div/div/main/div/div/div/div/div/div[1]/div[2]/div/span/form/span[1]/div/div/div[1]/div/input"
-category = "/html/body/div/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/span[3]/div/div/div[1]/div[1]/div[1]"
-ProjectName = "/html/body/div/div/main/div/div/div/div/div/div[1]/div[2]/div/span/form/span[2]/div/div/div[1]/div/input"
-AppDeadline = "/html/body/div/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[3]/div/div[1]/div/div[1]/div/input"
-Project_Description = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[7]/div/div[3]/div/p"
-What_you_will_Do = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[9]/div/div[3]/div/p"
-Skills = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[11]/div/div[3]/div/p"
-Who_you_work_with = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[13]/div/div[3]/div/p"
-Experience = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[15]/div/div[3]/div/p"
-Key_practical_skills = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[17]/div/div[3]/div/p"
+Post_A_New_Project = '/html/body/div/div[1]/div[2]/a'
+position = "(//input[@type='text'])[1]"
+ProjectName = "(//input[@type='text'])[2]"
+category = "//div[@class='v-select__selections']"
+AppDeadline = "//input[@role='button']"
+
+Project_Description = "Enjoy Dude Goal is to build a software which make people works easy"
+What_you_will_Do = "developing the front-end code for the app"
+Skills = "HTML, CSS, JS, SQL"
+Who_you_work_with = "Front-End Team"
+Experience = "it gives a good experience for the students to have more confidence in their Future Job"
+Key_practical_skills = "developing their coding skill and improving their understanding of front-end"
 second_next_button = "/html/body/div/div/main/div/div/div/div/div/div[1]/div[2]/div/div[3]/button[1]/span"
+
+# logout
 DropDown_Menu = "/html/body/div/header/div[1]/div/nav[2]/div/span/img"
 Logout_button = "/html/body/div/header/div[1]/div/nav[2]/div/div/div/span"
 
@@ -26,4 +29,5 @@ job_Description = "A QA Analyst ensures the quality of software products by test
 what_you_will_do = "writing test cases including automation and manual"
 Skills_you_possess = "Jira, python, selenium, Junit, Java"
 who_you_work_with = "Developers"
+
 

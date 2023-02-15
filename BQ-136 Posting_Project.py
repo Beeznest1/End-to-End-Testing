@@ -3,6 +3,8 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+
+import BeeznestsLocators
 import BeeznestsLocators as locators
 
 s = Service(executable_path='chromedriver.exe')
@@ -30,7 +32,7 @@ def Login():
 
 
 def PostProject():
-    driver.find_element(By.XPATH, '/html/body/div/header/div[1]/div/nav[1]/a[1]/span').click()  # Project tab
+    driver.find_element(By.XPATH, locators.PROJECTS).click()  # Project tab
     driver.find_element(By.XPATH, '/html/body/div/div[1]/div[2]/a').click()  # Post A New Project button
     driver.find_element(By.XPATH, locators.position).send_keys("Software Developer")  # Position Type
     sleep(2)

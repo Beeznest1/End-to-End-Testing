@@ -58,15 +58,13 @@ def PostingJob():
     sleep(1.5)
     driver.find_element(By.XPATH, "(//input[@type='text'])[6]").send_keys("25")
     sleep(1)
-    driver.find_element(By.XPATH, "(//p)[2]").send_keys(BeeznestsLocators.About_the_company)
-    driver.find_element(By.XPATH, "(//p)[4]").send_keys(BeeznestsLocators.job_Description)
-    driver.find_element(By.XPATH, "(//p)[6]").send_keys(BeeznestsLocators.what_you_will_do)
-    driver.find_element(By.XPATH, "(//p)[8]").send_keys(BeeznestsLocators.Skills_you_possess)
-    driver.find_element(By.XPATH, "(//p)[10]").send_keys(BeeznestsLocators.who_you_work_with)
-    breakpoint()
-
-
-
+    driver.find_element(By.XPATH, "(//p)[2]").send_keys(locators.About_the_company)
+    driver.find_element(By.XPATH, "(//p)[4]").send_keys(locators.job_Description)
+    driver.find_element(By.XPATH, "(//p)[6]").send_keys(locators.what_you_will_do)
+    driver.find_element(By.XPATH, "(//p)[8]").send_keys(locators.Skills_you_possess)
+    driver.find_element(By.XPATH, "(//p)[10]").send_keys(locators.who_you_work_with)
+    sleep(2)
+    driver.find_element(By.XPATH, "//span[@class='v-btn__content']").click()  # save button
 
 
 Login()

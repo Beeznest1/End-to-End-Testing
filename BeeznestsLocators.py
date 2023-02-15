@@ -1,5 +1,6 @@
 
 # requirement for posting a project
+PROJECTS = "/html/body/div/header/div[1]/div/nav[1]/a[1]/span"
 position = "/html/body/div/div/main/div/div/div/div/div/div[1]/div[2]/div/span/form/span[1]/div/div/div[1]/div/input"
 category = "/html/body/div/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/span[3]/div/div/div[1]/div[1]/div[1]"
 ProjectName = "/html/body/div/div/main/div/div/div/div/div/div[1]/div[2]/div/span/form/span[2]/div/div/div[1]/div/input"
@@ -10,7 +11,7 @@ Skills = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/sp
 Who_you_work_with = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[13]/div/div[3]/div/p"
 Experience = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[15]/div/div[3]/div/p"
 Key_practical_skills = "/html/body/div[1]/div[1]/main/div/div/div/div/div/div[1]/div[2]/div/span/form/div[17]/div/div[3]/div/p"
-second_next = "/html/body/div/div/main/div/div/div/div/div/div[1]/div[2]/div/div[3]/button[1]/span"
+second_next_button = "/html/body/div/div/main/div/div/div/div/div/div[1]/div[2]/div/div[3]/button[1]/span"
 DropDown_Menu = "/html/body/div/header/div[1]/div/nav[2]/div/span/img"
 Logout_button = "/html/body/div/header/div[1]/div/nav[2]/div/div/div/span"
 

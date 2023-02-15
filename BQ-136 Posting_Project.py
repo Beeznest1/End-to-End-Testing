@@ -36,12 +36,12 @@ def PostProject():
     sleep(2)
     driver.find_element(By.XPATH, locators.ProjectName).send_keys("Enjoy Dude")  # Project/Company Name
     driver.find_element(By.XPATH, locators.category).click()  # Category
-    driver.find_element(By.XPATH, "//div[contains(text(),'Cloud Computing Engineers')]").click()
+    driver.find_element(By.XPATH, locators.Cloud_Computing_Engineers).click()
     bar = driver.find_element(By.XPATH, "//div[@class='v-slider__thumb primary']")
     ActionChains(driver).click_and_hold(bar).pause(1).move_by_offset(230, 0).release().perform()  # move the slider
     driver.find_element(By.XPATH, locators.AppDeadline).click()  # Application Deadline
     sleep(3)
-    driver.find_element(By.XPATH, "//div[normalize-space()='30']").click()  # selecting the day in the calendar
+    driver.find_element(By.XPATH, locators.Day).click()  # selecting the day in the calendar 23
     # filling the fields
     driver.find_element(By.XPATH, "(//p)[2]").send_keys(locators.Project_Description)
     driver.find_element(By.XPATH, "(//p)[4]").send_keys(locators.what_you_will_do)

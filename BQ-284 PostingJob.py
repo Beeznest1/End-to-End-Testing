@@ -30,31 +30,31 @@ def Login():
 
 
 def PostingJob():
-    driver.find_element(By.XPATH, "//span[@class='tw-uppercase']").click()  # Internship/full-time job Tab
+    driver.find_element(By.XPATH, locators.full_time_job_Tab).click()  # Internship/full-time job Tab
     sleep(1.5)
-    driver.find_element(By.XPATH, "//a[normalize-space()='Post a new job']").click()  # Post a new job button
+    driver.find_element(By.XPATH, locators.Post_A_New_Job).click()  # Post a new job button
     sleep(1.5)
-    driver.find_element(By.XPATH, "//div[@role='radiogroup']//div[2]//div[1]//div[1]").click()  # second radio type (paid Job)
+    driver.find_element(By.XPATH, locators.Paid_Job).click()  # second radio type (paid Job)
     sleep(1.5)
-    driver.find_element(By.XPATH, "(//input[@type='text'])[1]").send_keys("QA Analyst")  # position title
+    driver.find_element(By.XPATH, locators.Position_Title).send_keys("QA Analyst")  # position title
     sleep(1.5)
-    driver.find_element(By.XPATH, "(//input[@type='text'])[2]").send_keys("Apple")  # Company Name
+    driver.find_element(By.XPATH, locators.Company_Name).send_keys("Apple")  # Company Name
     sleep(1.5)
-    driver.find_element(By.XPATH, "(//div[@class='v-select__selections'])[1]").click()  # collage availability dropdown menu
+    driver.find_element(By.XPATH, locators.Collage).click()  # collage availability dropdown menu
     sleep(1.5)
-    driver.find_element(By.XPATH, "(//div[@class='v-input--selection-controls__ripple'])[3]").click()
+    driver.find_element(By.XPATH, locators.Collage_Name).click()  # Beeznests
     sleep(1)
     driver.find_element(By.XPATH, "(//div[@class='row justify-center'])[1]").click()  # click anywhere on the webpage
     sleep(3)
-    driver.find_element(By.XPATH, "(//div[@class='v-select__selections'])[2]").click()  # category
+    driver.find_element(By.XPATH, locators.Category).click()  # category
     sleep(1.5)
-    driver.find_element(By.XPATH, "(//div[contains(text(),'Marketing')])[2]").click()  # category / marketing
+    driver.find_element(By.XPATH, locators.Marketing).click()  # category / marketing
     sleep(1.5)
-    driver.find_element(By.XPATH, "//input[@role='button']").click()  # app deadline
+    driver.find_element(By.XPATH, locators.AppDeadline).click()  # app deadline
     sleep(3)  # waiting is mandatory in here because of loading the elements
-    driver.find_element(By.XPATH, "//div[normalize-space()='23']").click()  # selecting day
+    driver.find_element(By.XPATH, locators.Day).click()  # selecting day 23
     sleep(1.5)
-    driver.find_element(By.XPATH, "(//input[@type='text'])[6]").send_keys("25")
+    driver.find_element(By.XPATH, locators.Reward).send_keys("25")
     sleep(1)
     driver.find_element(By.XPATH, "(//p)[2]").send_keys(locators.About_the_company)
     driver.find_element(By.XPATH, "(//p)[4]").send_keys(locators.job_Description)

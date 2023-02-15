@@ -4,6 +4,7 @@ Post_A_New_Project = '/html/body/div/div[1]/div[2]/a'
 position = "(//input[@type='text'])[1]"
 ProjectName = "(//input[@type='text'])[2]"
 category = "//div[@class='v-select__selections']"
+Cloud_Computing_Engineers = "//div[contains(text(),'Cloud Computing Engineers')]"
 AppDeadline = "//input[@role='button']"
 
 Project_Description = "Enjoy Dude Goal is to build a software which make people works easy"
@@ -24,6 +25,18 @@ New_password = "/html/body/div/div/main/div/div/div/div/div/div/div[2]/div[2]/di
 Confirm_new_password = "/html/body/div/div/main/div/div/div/div/div/div/div[2]/div[3]/div/div[1]/div/input"
 
 # requirements for posting a job
+full_time_job_Tab = "//span[@class='tw-uppercase']"
+Post_A_New_Job = "//a[normalize-space()='Post a new job']"
+Paid_Job = "//div[@role='radiogroup']//div[2]//div[1]//div[1]"
+Position_Title = "(//input[@type='text'])[1]"
+Company_Name = "(//input[@type='text'])[2]"
+Collage = "(//div[@class='v-select__selections'])[1]"
+Collage_Name = "(//div[@class='v-input--selection-controls__ripple'])[5]"
+Category = "(//div[@class='v-select__selections'])[2]"
+Marketing = "(//div[contains(text(),'Marketing')])[2]"
+AppDeadline = "//input[@role='button']"
+Day = "//div[normalize-space()='23']"
+Reward = "(//input[@type='text'])[6]"
 About_the_company = "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, United States."
 job_Description = "A QA Analyst ensures the quality of software products by testing and identifying defects."
 what_you_will_do = "writing test cases including automation and manual"

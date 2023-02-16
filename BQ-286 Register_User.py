@@ -23,5 +23,6 @@ def registration():
     driver.find_element(By.XPATH, locators.Register).click()
 
     breakpoint()
+    #to be finish
 
 registration()
